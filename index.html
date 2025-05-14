@@ -276,15 +276,76 @@
     <td>Canada (Quebec)</td>
     <td><img src="https://inaturalist-open-data.s3.amazonaws.com/photos/296615667/original.jpg" alt="Carpe" class="thumb" onclick="showModal(this)"></td>
 </tr>
+<style>
+  .info-icon {
+    display: inline-block;
+    margin-left: 5px;
+    cursor: pointer;
+    color: #007BFF;
+    font-weight: bold;
+    border-radius: 50%;
+    border: 1px solid #007BFF;
+    width: 16px;
+    height: 16px;
+    text-align: center;
+    font-size: 12px;
+    line-height: 14px;
+    position: relative;
+  }
+
+  .tooltip {
+    visibility: hidden;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 4px 8px;
+    border-radius: 4px;
+    position: absolute;
+    z-index: 1;
+    bottom: 120%;
+    left: 50%;
+    transform: translateX(-50%);
+    white-space: nowrap;
+    font-size: 12px;
+    opacity: 0;
+    transition: opacity 0.3s;
+  }
+
+  .info-icon:hover .tooltip,
+  .info-icon:focus .tooltip {
+    visibility: visible;
+    opacity: 1;
+  }
+</style>
+
 <tr>
-    <td>19.2</td>
-    <td>Carpe Miroir</td>
-    <td>Mirror carp</td>
-    <td><i>Cyprinus carpio ssp. carpio</i></td>
-    <td>2023-07-02</td>
-    <td>Canada (Quebec)</td>
-    <td><img src="https://inaturalist-open-data.s3.amazonaws.com/photos/296615116/original.jpg" alt="Carpe" class="thumb" onclick="showModal(this)"></td>
+  <td>19.2</td>
+  <td>
+    Carpe Miroir
+    <span class="info-icon" tabindex="0">i
+      <span class="tooltip">Sous-espèce</span>
+    </span>
+  </td>
+  <td>
+    Mirror carp
+    <span class="info-icon" tabindex="0">i
+      <span class="tooltip">Sous-espèce</span>
+    </span>
+  </td>
+  <td>
+    <i>Cyprinus carpio ssp. carpio</i>
+    <span class="info-icon" tabindex="0">i
+      <span class="tooltip">Sous-espèce</span>
+    </span>
+  </td>
+  <td>2023-07-02</td>
+  <td>Canada (Quebec)</td>
+  <td>
+    <img src="https://inaturalist-open-data.s3.amazonaws.com/photos/296615116/original.jpg"
+         alt="Carpe" class="thumb" onclick="showModal(this)">
+  </td>
 </tr>
+
 <tr>
     <td>20</td>
     <td>Barbotte brune</td>
